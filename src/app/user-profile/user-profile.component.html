@@ -1,0 +1,9 @@
+<div *ngIf="user" class="container">
+    <h2>{{ user.name.first }} {{ user.name.last }}</h2>
+    <img [src]="user.picture.large" alt="User Picture">
+    <p><strong>Email:</strong> {{ user.email }}</p>
+    <p><strong>username:</strong> {{ user.login.username }}</p>
+    <p><strong>Phone:</strong> {{ user.phone }}</p>
+    <p><strong>Location:</strong> {{ user.location.city }}, {{ user.location.country }}</p>
+  </div>
+  
